@@ -2,6 +2,10 @@
 
 class ABC implements \ArrayAccess, \Countable, \Serializable {
     
+    public function __construct($data) {
+        
+    }
+    
     public function count($mode = 'COUNT_NORMAL') {
         
     }

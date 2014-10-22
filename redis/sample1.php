@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-
+require 'RedisArr.php';
 
 $clients = array(
     'id' => 1,
@@ -51,7 +51,7 @@ for ($i=0; $i<=15000;$i++) {
 
 $time = microtime(TRUE);
 $redis = new Redis();
-$redis->connect('127.0.0.1', 6379);
+//$redis->connect('127.0.0.1', 6379);
 //$redis->setOption(Redis::OPT_SERIALIZER, Redis::SERIALIZER_PHP);
 //$redis->set('user', $data);
 //$rs = $redis->get('user');
@@ -59,9 +59,12 @@ $redis->connect('127.0.0.1', 6379);
 //$redis->hMset('user:1', $data);
 //$rs = $redis->hMget('user:1', array_keys($data));
 //
-$redis->set('user', json_encode($data));
-$rs = $redis->get('user');
-$rs = json_decode($rs, true);
+//$redis->set('user', json_encode($data));
+//$rs = $redis->get('user');
+//$rs = json_decode($rs, true);
+
+RedisEngine::getRedis();
+//RedisEngine::getKeys('user');
 
 $time2 = microtime(TRUE);
 //var_dump($rs);
