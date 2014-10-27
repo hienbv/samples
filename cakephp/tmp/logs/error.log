@@ -1,0 +1,222 @@
+2014-10-22 11:07:35 Error: [MissingComponentException] Component class DebugKitComponent could not be found.
+Exception Attributes: array (
+  'class' => 'DebugKitComponent',
+  'plugin' => false,
+)
+Request URL: /samples/cakephp/articles
+Stack Trace:
+#0 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit', Array)
+#1 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(ArticlesController))
+#2 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(186): Controller->constructClasses()
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#4 /var/www/html/samples/cakephp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-22 11:08:07 Error: [MissingComponentException] Component class toolbarComponent could not be found.
+Exception Attributes: array (
+  'class' => 'toolbarComponent',
+  'plugin' => 'DebugKit',
+)
+Request URL: /samples/cakephp/articles
+Stack Trace:
+#0 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.toolba...', Array)
+#1 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(ArticlesController))
+#2 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(186): Controller->constructClasses()
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#4 /var/www/html/samples/cakephp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-22 13:33:28 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'doReleaseTheHounds' at line 1
+Request URL: /samples/cakephp/articles
+Stack Trace:
+#0 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('doReleaseTheHou...', Array)
+#2 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('doReleaseTheHou...', Array, Array)
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('doReleaseTheHou...', Array, Array)
+#4 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('doReleaseTheHou...', Array, Object(Article))
+#5 /var/www/html/samples/cakephp/Controller/ArticlesController.php(26): Model->__call('doReleaseTheHou...', Array)
+#6 /var/www/html/samples/cakephp/Controller/ArticlesController.php(26): Article->doReleaseTheHounds('all', 'first')
+#7 [internal function]: ArticlesController->index()
+#8 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticlesController), Array)
+#9 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#11 /var/www/html/samples/cakephp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-10-22 13:45:42 Error: [MissingViewException] View file "/var/www/html/samples/cakephp/View/Articles/api.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/samples/cakephp/View/Articles/api.ctp',
+)
+Request URL: /samples/cakephp/articles/api
+Stack Trace:
+#0 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#4 /var/www/html/samples/cakephp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-22 13:49:38 Error: [MissingViewException] View file "/var/www/html/samples/cakephp/View/Articles/api.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/samples/cakephp/View/Articles/api.ctp',
+)
+Request URL: /samples/cakephp/articles/api
+Stack Trace:
+#0 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#4 /var/www/html/samples/cakephp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-22 13:49:55 Error: [MissingViewException] View file "/var/www/html/samples/cakephp/View/Articles/api.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/samples/cakephp/View/Articles/api.ctp',
+)
+Request URL: /samples/cakephp/articles/api
+Stack Trace:
+#0 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#4 /var/www/html/samples/cakephp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-22 13:56:03 Error: [MissingActionException] Action ArticlesController::api() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'api',
+)
+Request URL: /samples/cakephp/articles/api
+Stack Trace:
+#0 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#2 /var/www/html/samples/cakephp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-22 14:13:43 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/html/samples/cakephp/Controller/ArticlesController.php, line 57]
+2014-10-22 14:13:43 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /samples/cakephp/articles/add
+Stack Trace:
+#0 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/s...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/s...', 57, Array)
+#2 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/s...', 57, Array)
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-22 14:13:57 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/html/samples/cakephp/Controller/ArticlesController.php, line 57]
+2014-10-22 14:13:57 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /samples/cakephp/articles/add
+Stack Trace:
+#0 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/s...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/s...', 57, Array)
+#2 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/s...', 57, Array)
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-22 14:14:03 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/html/samples/cakephp/Controller/ArticlesController.php, line 57]
+2014-10-22 14:14:03 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /samples/cakephp/articles/add
+Stack Trace:
+#0 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/s...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/s...', 57, Array)
+#2 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/s...', 57, Array)
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-22 14:15:17 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/html/samples/cakephp/Controller/ArticlesController.php, line 103]
+2014-10-22 14:15:17 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /samples/cakephp/articles/delete/5
+Stack Trace:
+#0 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/s...', 103)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/s...', 103, Array)
+#2 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/s...', 103, Array)
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-22 14:16:32 Error: [NotFoundException] Invalid article
+Request URL: /samples/cakephp/articles/delete/5
+Stack Trace:
+#0 [internal function]: ArticlesController->delete('5')
+#1 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticlesController), Array)
+#2 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#4 /var/www/html/samples/cakephp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-22 14:17:00 Error: [MissingViewException] View file "/var/www/html/samples/cakephp/View/Articles/delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/samples/cakephp/View/Articles/delete.ctp',
+)
+Request URL: /samples/cakephp/articles/delete/3
+Stack Trace:
+#0 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#4 /var/www/html/samples/cakephp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-22 14:17:11 Error: [NotFoundException] Invalid article
+Request URL: /samples/cakephp/articles/delete/3
+Stack Trace:
+#0 [internal function]: ArticlesController->delete('3')
+#1 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticlesController), Array)
+#2 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#4 /var/www/html/samples/cakephp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-22 14:18:48 Error: [MissingViewException] View file "/var/www/html/samples/cakephp/View/Articles/delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/samples/cakephp/View/Articles/delete.ctp',
+)
+Request URL: /samples/cakephp/articles/delete/6
+Stack Trace:
+#0 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#4 /var/www/html/samples/cakephp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-22 14:19:17 Error: [NotFoundException] Invalid article
+Request URL: /samples/cakephp/articles/delete/6
+Stack Trace:
+#0 [internal function]: ArticlesController->delete('6')
+#1 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticlesController), Array)
+#2 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#4 /var/www/html/samples/cakephp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-22 14:22:00 Error: [MissingBehaviorException] Behavior class CusModelBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'CusModelBehavior',
+  'plugin' => false,
+)
+Request URL: /samples/cakephp/articles
+Stack Trace:
+#0 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('CusModel', Array)
+#1 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(755): BehaviorCollection->init('Article', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#4 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#5 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(367): Controller->loadModel('Article')
+#6 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(405): Controller->__isset('Article')
+#7 /var/www/html/samples/cakephp/Controller/ArticlesController.php(27): Controller->__get('Article')
+#8 [internal function]: ArticlesController->index()
+#9 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticlesController), Array)
+#10 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#12 /var/www/html/samples/cakephp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-10-22 15:16:13 Error: [MissingViewException] View file "/var/www/html/samples/cakephp/View/Articles/delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/html/samples/cakephp/View/Articles/delete.ctp',
+)
+Request URL: /samples/cakephp/articles/delete/8
+Stack Trace:
+#0 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#4 /var/www/html/samples/cakephp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-22 15:16:24 Error: [NotFoundException] Invalid article
+Request URL: /samples/cakephp/articles/delete/8
+Stack Trace:
+#0 [internal function]: ArticlesController->delete('8')
+#1 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticlesController), Array)
+#2 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#4 /var/www/html/samples/cakephp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

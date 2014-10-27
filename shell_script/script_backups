@@ -1,0 +1,16 @@
+1. Local backup
+- Install rsync package
+	rsync -av --delete /path/src /path/dest
+
+2. Remove backups
+- Install ssh & rsync packages
+- Using ssh key
+	ssh-add /home/hienbv/keys/rsa.key
+	rsync -av –delete -e 'ssh -p 22' /path/src username@192.168.235.137:/path/dest	
+
+3. How create file backups
+- Use Cron to backup
+	0 22 * * * rsync -av --delete /path/src /path/dest
+	0 22 * * * /path/script_bakup_10_hour_daily.sh
+	
+	

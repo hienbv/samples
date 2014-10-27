@@ -6,7 +6,26 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'System' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
     'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
+    'Symfony\\Component\\Finder\\' => array($vendorDir . '/symfony/finder'),
+    'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log'),
+    'Patchwork' => array($vendorDir . '/patchwork/utf8/class'),
+    'Normalizer' => array($vendorDir . '/patchwork/utf8/class'),
+    'Net' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
+    'Math' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
+    'Illuminate\\Support' => array($vendorDir . '/illuminate/support'),
+    'Illuminate\\Remote' => array($vendorDir . '/illuminate/remote'),
+    'Illuminate\\Log' => array($vendorDir . '/illuminate/log'),
+    'Illuminate\\Filesystem' => array($vendorDir . '/illuminate/filesystem'),
+    'Illuminate\\Events' => array($vendorDir . '/illuminate/events'),
+    'Illuminate\\Container' => array($vendorDir . '/illuminate/container'),
+    'Illuminate\\Console' => array($vendorDir . '/illuminate/console'),
+    'Illuminate\\Config' => array($vendorDir . '/illuminate/config'),
+    'File' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src'),
+    'Crypt' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
     'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src'),
+    '' => array($vendorDir . '/kzykhys/parallel/src'),
 );

@@ -9,7 +9,9 @@
             },
             "require-dev": {
                 "cakephp/debug_kit": "2.2.*",
-                "phpunit/phpunit": "4.3.*"
+                "phpunit/phpunit": "4.3.*",
+		"anahkiasen/rocketeer": "*",
+                "patchwork/utf8": "*"
             }
 }
 

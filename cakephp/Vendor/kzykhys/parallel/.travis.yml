@@ -1,0 +1,24 @@
+language: php
+
+php:
+  - 5.5
+  - 5.4
+  - hhvm
+
+matrix:
+  allow_failures:
+    - php: hhvm
+
+before_script:
+  - curl -s http://getcomposer.org/installer | php
+  - php composer.phar install --dev --no-interaction
+  - php composer.phar require satooshi/php-coveralls:dev-master
+  - wget https://phar.phpunit.de/phpcov.phar
+
+script:
+  - mkdir -p build/logs
+  - phpunit -c phpunit.xml.dist --coverage-php build/logs/clover-parent.cov
+
+after_script:
+  - php phpcov.phar --merge --clover build/logs/clover.xml build/logs
+  - php vendor/bin/coveralls
