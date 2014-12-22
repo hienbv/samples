@@ -1,4 +1,5 @@
-<div class="articles index">
+<?php /* ?>
+<!--<div class="articles index">
 	<h2><?php echo __('Articles'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<thead>
@@ -49,4 +50,17 @@
 	<ul>
 		<li><?php echo $this->Html->link(__('New Article'), array('action' => 'add')); ?></li>
 	</ul>
-</div>
+</div>-->
+        <?php */ ?>
+<?php 
+echo $this->Html->script('jquery-1.8.3.min');
+echo $this->Html->script('moment-with-locales');
+?>
+
+<script>
+$(function () {
+    var now = moment('2014-11-01T08:07:32+00:00').format();
+    console.log(now);
+    console.log(moment.utc().format());
+})
+$</script>

@@ -220,3 +220,47 @@ Stack Trace:
 #3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
 #4 /var/www/html/samples/cakephp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-11-01 14:50:13 Error: [Exception] DateTime::__construct() [<a href='http://php.net/datetime.construct'>datetime.construct</a>]: Failed to parse time string (@) at position 0 (@): Unexpected character
+Request URL: /samples/cakephp/articles
+Stack Trace:
+#0 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Utility/CakeTime.php(252): DateTime->__construct('@')
+#1 /var/www/html/samples/cakephp/Controller/ArticlesController.php(32): CakeTime::convert(NULL, NULL)
+#2 [internal function]: ArticlesController->index()
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticlesController), Array)
+#4 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#6 /var/www/html/samples/cakephp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-11-01 14:50:13 Error: [Exception] DateTime::__construct() [<a href='http://php.net/datetime.construct'>datetime.construct</a>]: Failed to parse time string (@) at position 0 (@): Unexpected character
+Request URL: /samples/cakephp/articles
+Stack Trace:
+#0 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Utility/CakeTime.php(252): DateTime->__construct('@')
+#1 /var/www/html/samples/cakephp/Controller/ArticlesController.php(32): CakeTime::convert(NULL, NULL)
+#2 [internal function]: ArticlesController->index()
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticlesController), Array)
+#4 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#6 /var/www/html/samples/cakephp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-11-01 14:50:45 Error: [Exception] DateTime::__construct() [<a href='http://php.net/datetime.construct'>datetime.construct</a>]: Failed to parse time string (@2014-11-01 14:50:45) at position 8 (-): Double timezone specification
+Request URL: /samples/cakephp/articles
+Stack Trace:
+#0 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Utility/CakeTime.php(252): DateTime->__construct('@2014-11-01 14:...')
+#1 /var/www/html/samples/cakephp/Controller/ArticlesController.php(32): CakeTime::convert('2014-11-01 14:5...', NULL)
+#2 [internal function]: ArticlesController->index()
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticlesController), Array)
+#4 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#6 /var/www/html/samples/cakephp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-11-01 14:50:50 Error: [Exception] DateTime::__construct(): Failed to parse time string (@2014-11-01 14:50:50) at position 8 (-): Double timezone specification
+Request URL: /samples/cakephp/articles
+Stack Trace:
+#0 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Utility/CakeTime.php(252): DateTime->__construct('@2014-11-01 14:...')
+#1 /var/www/html/samples/cakephp/Controller/ArticlesController.php(32): CakeTime::convert('2014-11-01 14:5...', 'UTC')
+#2 [internal function]: ArticlesController->index()
+#3 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticlesController), Array)
+#4 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/samples/cakephp/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#6 /var/www/html/samples/cakephp/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}

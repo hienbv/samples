@@ -24,10 +24,14 @@ class ArticlesController extends AppController {
      */
     
     public function index() {
-        $this->Article->recursive = 0;
-        $rs = $this->Paginator->paginate();
-        $this->set('articles', $rs);
-        Cache::write('query_index', $rs);
+//        $this->Article->recursive = 0;
+//        $rs = $this->Paginator->paginate();
+//        $this->set('articles', $rs);
+//        Cache::write('query_index', $rs);
+        App::uses('CakeTime', 'Utility');
+//        CakeTime::convert(date('Y-m-d H:i:s'), 'UTC');
+        debug(CakeTime::serverOffset()/60/60);
+//        die;
     }
     
     /**
